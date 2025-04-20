@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} 假设输入数据}
+\PYG{n}{batch\PYGZus{}size} \PYG{o}{=} \PYG{l+m+mi}{4}  \PYG{c+c1}{\PYGZsh{} 假设有 4 个样本}
+\PYG{n}{channels} \PYG{o}{=} \PYG{l+m+mi}{512}  \PYG{c+c1}{\PYGZsh{} 从 Bottleneck 输出的特征通道}
+\PYG{n}{height} \PYG{o}{=} \PYG{l+m+mi}{7}      \PYG{c+c1}{\PYGZsh{} 特征图的高度}
+\PYG{n}{width} \PYG{o}{=} \PYG{l+m+mi}{7}       \PYG{c+c1}{\PYGZsh{} 特征图的宽度}
+\PYG{n}{spacial\PYGZus{}dim} \PYG{o}{=} \PYG{n}{height}  \PYG{c+c1}{\PYGZsh{} 假设输入特征图是正方形}
+\PYG{n}{embed\PYGZus{}dim} \PYG{o}{=} \PYG{n}{channels}  \PYG{c+c1}{\PYGZsh{} 嵌入维度与输入通道数一致}
+\PYG{n}{num\PYGZus{}heads} \PYG{o}{=} \PYG{l+m+mi}{8}  \PYG{c+c1}{\PYGZsh{} 多头注意力头数}
+\PYG{n}{output\PYGZus{}dim} \PYG{o}{=} \PYG{l+m+mi}{256}  \PYG{c+c1}{\PYGZsh{} 输出特征维度}
+
+\PYG{c+c1}{\PYGZsh{} 生成模拟输入数据（模拟从 Bottleneck 输出的特征图）}
+\PYG{k}{def} \PYG{n+nf}{generate\PYGZus{}input\PYGZus{}data}\PYG{p}{(}\PYG{n}{batch\PYGZus{}size}\PYG{p}{,} \PYG{n}{channels}\PYG{p}{,} \PYG{n}{height}\PYG{p}{,} \PYG{n}{width}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} 生成随机输入数据}
+    \PYG{n}{input\PYGZus{}data} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{randn}\PYG{p}{(}\PYG{n}{batch\PYGZus{}size}\PYG{p}{,} \PYG{n}{channels}\PYG{p}{,} \PYG{n}{height}\PYG{p}{,} \PYG{n}{width}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} 随机生成输入数据}
+    \PYG{k}{return} \PYG{n}{input\PYGZus{}data}
+\PYG{n}{input\PYGZus{}data} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{randn}\PYG{p}{(}\PYG{n}{batch\PYGZus{}size}\PYG{p}{,} \PYG{n}{channels}\PYG{p}{,} \PYG{n}{height}\PYG{p}{,} \PYG{n}{width}\PYG{p}{)}
+\end{Verbatim}

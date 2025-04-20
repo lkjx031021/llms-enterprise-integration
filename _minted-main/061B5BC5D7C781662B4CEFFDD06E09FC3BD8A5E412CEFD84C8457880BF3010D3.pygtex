@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }./hfd\PYGZus{}revised.sh\PYG{+w}{ }bigcode/starcoderdata\PYG{+w}{ }\PYGZhy{}\PYGZhy{}dataset\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}python/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}sql/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}matlab/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}javascript/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}java/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}json/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}c/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}rust/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}go/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}typescript/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}kotlin*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}swift/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}julia/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}markdown/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}include\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}html/*\PYGZdq{}}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}hf\PYGZus{}username\PYG{+w}{ }TsaiTsai0929\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}hf\PYGZus{}token\PYG{+w}{ }hf\PYGZus{}xxxx\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}tool\PYG{+w}{ }aria2c\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}x\PYG{+w}{ }\PYG{l+m}{4}\PYG{+w}{ }\PYGZhy{}j\PYG{+w}{ }\PYG{l+m}{5}\PYG{+w}{ }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}local\PYGZhy{}dir\PYG{+w}{ }\PYGZti{}/autodl\PYGZhy{}tmp/dataprocess/data/starcoder
+\end{Verbatim}

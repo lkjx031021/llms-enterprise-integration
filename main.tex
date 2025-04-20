@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{xcolor}
+
+\definecolor{mybgcolor}{RGB}{230, 240, 255}
+
+% 设置全局代码块样式
+\setminted{
+    bgcolor=mybgcolor,
+    frame=lines,
+    framesep=2mm,
+    rulecolor=blue,
+    linenos=true,
+    breaklines=true
+}
+
+\begin{document}
+\title{测试文档}
+\author{Yguo. 国越}
+\date{\today}
+% \date{2025年3月10日}
+\maketitle
+
+\tableofcontents
+
+正文内容： $$\sum_{min}^{max}$$
+
+\section{第一个段落。}
+\begin{center}
+    
+第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。第二个段落。
+
+第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.\par
+第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.第三个段落.
+\end{center}
+\subsection{数学公式}
+$$
+\sigma  = \epsilon \cdot \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2}
+$$
+\begin{minted}{python}
+# 假设输入数据
+batch_size = 4  # 假设有 4 个样本
+channels = 512  # 从 Bottleneck 输出的特征通道
+height = 7      # 特征图的高度
+width = 7       # 特征图的宽度
+spacial_dim = height  # 假设输入特征图是正方形
+embed_dim = channels  # 嵌入维度与输入通道数一致
+num_heads = 8  # 多头注意力头数
+output_dim = 256  # 输出特征维度
+    
+# 生成模拟输入数据（模拟从 Bottleneck 输出的特征图）
+def generate_input_data(batch_size, channels, height, width):
+    # 生成随机输入数据
+    input_data = torch.randn(batch_size, channels, height, width)  # 随机生成输入数据
+    return input_data
+input_data = torch.randn(batch_size, channels, height, width) 
+\end{minted}
+
+\begin{minted}{bash}
+    ./hfd_revised.sh bigcode/starcoderdata --dataset \
+    --include "python/*" \
+    --include "sql/*" \
+    --include "matlab/*" \
+    --include "javascript/*" \
+    --include "java/*" \
+    --include "json/*" \
+    --include "c/*" \
+    --include "rust/*" \
+    --include "go/*" \
+    --include "typescript/*" \
+    --include "kotlin*" \
+    --include "swift/*" \
+    --include "julia/*" \
+    --include "markdown/*" \
+    --include "html/*" \
+    --hf_username TsaiTsai0929 \
+    --hf_token hf_xxxx \
+    --tool aria2c \
+    -x 4 -j 5 \
+    --local-dir ~/autodl-tmp/dataprocess/data/starcoder
+\end{minted}
+
+% \section*{简单的无序列表}
+\begin{itemize}
+    \item 苹果
+    \item 香蕉
+    \item 橙子
+\end{itemize}
+
+\begin{enumerate}
+    \item LORA
+    \item PEFT
+    \item 3
+\end{enumerate}
+\begin{description}
+    \item[Step1] 低秩适配器  
+    \item[Step2]     
+\end{description}
+
+\end{document}
